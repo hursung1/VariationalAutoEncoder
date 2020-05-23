@@ -47,7 +47,7 @@ TrainDataLoader = torch.utils.data.DataLoader(TrainDataset, batch_size=batch_siz
 TestDataLoader = torch.utils.data.DataLoader(TestDataset, batch_size=batch_size, shuffle=False, num_workers=2)
 
 
-epochs = 200
+epochs = 400
 net = models.VAE()
 bce = torch.nn.BCELoss()
 optim = torch.optim.Adam(net.parameters())
